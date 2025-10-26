@@ -35,7 +35,9 @@
 /* Private typedef -----------------------------------------------------------*/
 typedef struct
 {
-  /* zServisA */
+  /* zSvcA */
+  /* zSvcB */
+  /* zGATT_UART */
   /* USER CODE BEGIN CUSTOM_APP_Context_t */
 
   /* USER CODE END CUSTOM_APP_Context_t */
@@ -76,7 +78,9 @@ uint16_t Connection_Handle;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
-/* zServisA */
+/* zSvcA */
+/* zSvcB */
+/* zGATT_UART */
 
 /* USER CODE BEGIN PFP */
 
@@ -94,13 +98,27 @@ void Custom_STM_App_Notification(Custom_STM_App_Notification_evt_t *pNotificatio
 
     /* USER CODE END CUSTOM_STM_App_Notification_Custom_Evt_Opcode */
 
-    /* zServisA */
+    /* zSvcA */
     case CUSTOM_STM_CHARWRITE_WRITE_EVT:
       /* USER CODE BEGIN CUSTOM_STM_CHARWRITE_WRITE_EVT */
 
       /* USER CODE END CUSTOM_STM_CHARWRITE_WRITE_EVT */
       break;
 
+    /* zSvcB */
+    case CUSTOM_STM_SVCB1_READ_EVT:
+      /* USER CODE BEGIN CUSTOM_STM_SVCB1_READ_EVT */
+
+      /* USER CODE END CUSTOM_STM_SVCB1_READ_EVT */
+      break;
+
+    case CUSTOM_STM_SVCB1_WRITE_EVT:
+      /* USER CODE BEGIN CUSTOM_STM_SVCB1_WRITE_EVT */
+
+      /* USER CODE END CUSTOM_STM_SVCB1_WRITE_EVT */
+      break;
+
+    /* zGATT_UART */
     case CUSTOM_STM_NOTIFICATION_COMPLETE_EVT:
       /* USER CODE BEGIN CUSTOM_STM_NOTIFICATION_COMPLETE_EVT */
 
@@ -174,7 +192,9 @@ void Custom_APP_Init(void)
  *
  *************************************************************/
 
-/* zServisA */
+/* zSvcA */
+/* zSvcB */
+/* zGATT_UART */
 
 /* USER CODE BEGIN FD_LOCAL_FUNCTIONS*/
 

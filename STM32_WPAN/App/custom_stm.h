@@ -34,14 +34,26 @@ extern "C" {
 /* Exported types ------------------------------------------------------------*/
 typedef enum
 {
-  /* zServisA */
+  /* zSvcA */
   CUSTOM_STM_CHARWRITE,
+  /* zSvcB */
+  CUSTOM_STM_SVCB1,
+  CUSTOM_STM_SVCB2,
+  /* zGATT_UART */
+  CUSTOM_STM_UART_TX,
+  CUSTOM_STM_UART_RX,
 } Custom_STM_Char_Opcode_t;
 
 typedef enum
 {
   /* charWrite */
   CUSTOM_STM_CHARWRITE_WRITE_EVT,
+  /* svcB1 */
+  CUSTOM_STM_SVCB1_READ_EVT,
+  CUSTOM_STM_SVCB1_WRITE_EVT,
+  /* svcB2 */
+  /* uart_tx */
+  /* uart_rx */
   CUSTOM_STM_NOTIFICATION_COMPLETE_EVT,
 
   CUSTOM_STM_BOOT_REQUEST_EVT
@@ -68,6 +80,10 @@ typedef struct
 
 /* Exported constants --------------------------------------------------------*/
 extern uint16_t SizeCharwrite;
+extern uint16_t SizeSvcb1;
+extern uint16_t SizeSvcb2;
+extern uint16_t SizeUart_Tx;
+extern uint16_t SizeUart_Rx;
 
 /* USER CODE BEGIN EC */
 

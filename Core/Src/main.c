@@ -209,6 +209,7 @@ void PeriphCommonClock_Config(void)
   	  //  Phil's LAB Phil Salmony
   	  //  https://youtu.be/-xYoI84zJew?t=1616
   	  //    LL_HSEM_1StepLock( HSEM, 5 );
+  	  // https://community.st.com/t5/stm32-mcus-wireless/usb-device-does-not-work-when-starting-ble-stack-on-stm32wb55/td-p/176360
 
   	  LL_HSEM_1StepLock( HSEM, 5 );
 
