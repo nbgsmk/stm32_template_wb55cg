@@ -371,14 +371,14 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOE_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(BOARD_LED_GPIO_Port, BOARD_LED_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(BOARD_LED0_GPIO_Port, BOARD_LED0_Pin, GPIO_PIN_RESET);
 
-  /*Configure GPIO pin : BOARD_LED_Pin */
-  GPIO_InitStruct.Pin = BOARD_LED_Pin;
+  /*Configure GPIO pin : BOARD_LED0_Pin */
+  GPIO_InitStruct.Pin = BOARD_LED0_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(BOARD_LED_GPIO_Port, &GPIO_InitStruct);
+  HAL_GPIO_Init(BOARD_LED0_GPIO_Port, &GPIO_InitStruct);
 
   /* USER CODE BEGIN MX_GPIO_Init_2 */
   /* USER CODE END MX_GPIO_Init_2 */
