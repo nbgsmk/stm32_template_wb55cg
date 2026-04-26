@@ -298,7 +298,7 @@ void SVCCTL_InitCustomSvc(void)
   }
   else
   {
-    APP_DBG_MSG("  Success: aci_gatt_add_service command: zSA \n\r");
+    APP_DBG_MSG("  Success: aci_gatt_add_service command: zSA , handle = 0x%04x \n\r", CustomContext.CustomZsaHdle);
   }
 
   /**
@@ -320,7 +320,7 @@ void SVCCTL_InitCustomSvc(void)
   }
   else
   {
-    APP_DBG_MSG("  Success: aci_gatt_add_char command   : CHARWRITE \n\r");
+    APP_DBG_MSG("  Success: aci_gatt_add_char command   : CHARWRITE , handle = 0x%04x \n\r", CustomContext.CustomCharwriteHdle);
   }
 
   /* USER CODE BEGIN SVCCTL_Init_Service1_Char1 */
@@ -360,7 +360,7 @@ void SVCCTL_InitCustomSvc(void)
   }
   else
   {
-    APP_DBG_MSG("  Success: aci_gatt_add_service command: zSB \n\r");
+    APP_DBG_MSG("  Success: aci_gatt_add_service command: zSB , handle = 0x%04x \n\r", CustomContext.CustomZsbHdle);
   }
 
   /**
@@ -382,7 +382,7 @@ void SVCCTL_InitCustomSvc(void)
   }
   else
   {
-    APP_DBG_MSG("  Success: aci_gatt_add_char command   : SVCB1 \n\r");
+    APP_DBG_MSG("  Success: aci_gatt_add_char command   : SVCB1 , handle = 0x%04x \n\r", CustomContext.CustomSvcb1Hdle);
   }
 
   /* USER CODE BEGIN SVCCTL_Init_Service2_Char1 */
@@ -408,7 +408,7 @@ void SVCCTL_InitCustomSvc(void)
   }
   else
   {
-    APP_DBG_MSG("  Success: aci_gatt_add_char command   : SVCB2 \n\r");
+    APP_DBG_MSG("  Success: aci_gatt_add_char command   : SVCB2 , handle = 0x%04x \n\r", CustomContext.CustomSvcb2Hdle);
   }
 
   /* USER CODE BEGIN SVCCTL_Init_Service2_Char2 */
@@ -447,7 +447,7 @@ void SVCCTL_InitCustomSvc(void)
   }
   else
   {
-    APP_DBG_MSG("  Success: aci_gatt_add_service command: zUART \n\r");
+    APP_DBG_MSG("  Success: aci_gatt_add_service command: zUART , handle = 0x%04x \n\r", CustomContext.CustomZuartHdle);
   }
 
   /**
@@ -469,7 +469,7 @@ void SVCCTL_InitCustomSvc(void)
   }
   else
   {
-    APP_DBG_MSG("  Success: aci_gatt_add_char command   : UART_TX \n\r");
+    APP_DBG_MSG("  Success: aci_gatt_add_char command   : UART_TX , handle = 0x%04x \n\r", CustomContext.CustomUart_TxHdle);
   }
 
   /* USER CODE BEGIN SVCCTL_Init_Service3_Char1 */
@@ -495,7 +495,7 @@ void SVCCTL_InitCustomSvc(void)
   }
   else
   {
-    APP_DBG_MSG("  Success: aci_gatt_add_char command   : UART_RX \n\r");
+    APP_DBG_MSG("  Success: aci_gatt_add_char command   : UART_RX , handle = 0x%04x \n\r", CustomContext.CustomUart_RxHdle);
   }
 
   /* USER CODE BEGIN SVCCTL_Init_Service3_Char2 */
